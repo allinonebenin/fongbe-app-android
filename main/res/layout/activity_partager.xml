@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Marie-Parisius Dorian HOUESSOU -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <!-- <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/smsShareText"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@+id/sms"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UnknownIdInLayout" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textAlignment="center"
+        tools:ignore="LabelFor" />-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/roundedbutton1"
+        android:drawableRight="@drawable/ic_textsms_white_36dp"
+        android:onClick="openDialog"
+        android:text="@string/par"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="422dp"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/shareSocial"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/shareSocial"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/roundedbutton2"
+        android:drawableRight="@drawable/ic_group_add_white_18dp"
+        android:text="@string/partager_sur_les_r_seaux_sociaux"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:onClick="shareSocial"
+        tools:layout_editor_absoluteY="67dp"
+        tools:targetApi="ice_cream_sandwich"
+        tools:ignore="RtlHardcoded"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+<!--
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="@string/ou"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold" />-->
+
+</RelativeLayout>
+    <!-- Marie-Parisius Dorian HOUESSOU -->

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Marie-Parisius Dorian HOUESSOU -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.allinone_benin.fongbe.fongbe.Accueil"
+    tools:ignore="GradleDependency">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_selector"
+                android:onClick="goToAlphabet"
+                android:orientation="horizontal"
+                android:padding="10dip">
+                <!--  ListRow Left sied Thumbnail image -->
+                <LinearLayout
+                    android:id="@+id/thumbnail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip"
+                    tools:ignore="RtlHardcoded">
+
+                    <ImageView
+                        android:id="@+id/list_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription=""
+                        android:src="@drawable/alphabeticon"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+                <!-- Title Of Song-->
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/thumbnail"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:text="@string/alphabet"
+                    android:textColor="#040404"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+                <!-- Artist Name -->
+                <TextView
+                    android:id="@+id/artist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/w_kw_n_fon_gb_min_ton"
+                    android:textColor="#343434"
+                    android:textSize="18sp"
+                    tools:ignore="SmallSp"
+                    android:layout_alignBottom="@+id/thumbnail"
+                    android:layout_toEndOf="@+id/thumbnail" />
+
+                <!-- Rightend Arrow -->
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout"
+                android:background="@drawable/list_selector"
+                android:onClick="goToChiffre"
+                android:orientation="horizontal"
+                android:padding="10dip">
+                <!--  ListRow Left sied Thumbnail image -->
+                <LinearLayout
+                    android:id="@+id/thumbnail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip"
+                    tools:ignore="RtlHardcoded">
+
+                    <ImageView
+                        android:id="@+id/list_image1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription=""
+                        android:src="@drawable/chiffreicon"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+                <!-- Title Of Song-->
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/thumbnail1"
+                    android:layout_toRightOf="@+id/thumbnail1"
+                    android:text="@string/chiffres"
+                    android:textColor="#040404"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+                <!-- Artist Name -->
+                <TextView
+                    android:id="@+id/artist1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/thumbnail1"
+                    android:text="@string/nun_lin_l_n"
+                    android:textColor="#343434"
+                    android:textSize="18sp"
+                    tools:ignore="SmallSp" />
+
+                <!-- Rightend Arrow -->
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    tools:ignore="ContentDescription,DuplicateIds,RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout2"
+                android:background="@drawable/list_selector"
+                android:onClick="goToAliment"
+                android:orientation="horizontal"
+                android:padding="10dip">
+                <!--  ListRow Left sied Thumbnail image -->
+                <LinearLayout
+                    android:id="@+id/thumbnail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dip"
+                    android:padding="3dip"
+                    tools:ignore="RtlHardcoded">
+
+                    <ImageView
+                        android:id="@+id/list_image2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription=""
+                        android:src="@drawable/alimenticon"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+                <!-- Title Of Song-->
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/thumbnail2"
+                    android:layout_toRightOf="@+id/thumbnail2"
+                    android:text="@string/aliments"
+                    android:textColor="#040404"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+                <!-- Artist Name -->
+                <TextView
+                    android:id="@+id/artist2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/thumbnail2"
+                    android:text="@string/n"
+                    android:textColor="#343434"
+                    android:textSize="18sp"
+                    tools:ignore="SmallSp" />
+
+                <!-- Rightend Arrow -->
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/recBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription=""
+            app:srcCompat="@drawable/logo2si"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/adresse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:text="@string/adrmail"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/recBtn"
+            android:layout_width="355dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/roundedbutton"
+            android:drawableRight="@drawable/ic_share_white_24dp"
+            android:onClick="goToPartager"
+            android:text="@string/recommander"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+</ScrollView>
+    <!-- Marie-Parisius Dorian HOUESSOU -->

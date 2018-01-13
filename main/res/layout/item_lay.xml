@@ -1,0 +1,56 @@
+<!-- Marie-Parisius Dorian HOUESSOU -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/nameimage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/a"
+        android:contentDescription="@string/word_picture"/>
+
+    <TextView
+        android:id="@+id/name_fon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nameimage"
+        android:layout_toLeftOf="@+id/voiceButton"
+        android:layout_toRightOf="@+id/nameimage"
+        android:maxLines="3"
+        android:text="April"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/name_fr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="This is a good Post,"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/nameimage"
+        android:layout_toRightOf="@+id/nameimage"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/voiceButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_volume_up_black_24dp" />
+</RelativeLayout>
+    <!-- Marie-Parisius Dorian HOUESSOU -->
